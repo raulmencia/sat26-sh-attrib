@@ -30,7 +30,7 @@ The project is organized into three main directories:
     *   `coverage.py`: Script to compute the coverage of MUSes and MCSes formulas.
     *   `enumeration.py`: Tool to enumerate MUSes and MCSes from an unsatisfiable formula.
     *   `sh_common.py`: Shared core classes used by the other scripts.
-*   **`instances/`**: Contains the benchmarks utilized in the paper.
+*   **`instances/`**: Contains the benchmarks used in the paper.
     *   `list.txt`: Contains the instances utilized. These are unsatisfiable unweighted instances from the exact track of the MaxSAT Evaluation 2024, which can be downloaded from: https://maxsat-evaluations.github.io/2024/benchmarks.html
     *   `baseline/`: CNF formulas of MUSes and MCSes for the "Coverage and Importance Interval Convergence" section.
     *   `challenging/`: CNF formulas of MUSes and MCSes for the "Attribution in Harder Formulas" section.
