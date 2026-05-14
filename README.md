@@ -26,7 +26,7 @@ The project is organized into three main directories:
 *   **`source/`**: Contains the Python tool execution scripts, internal classes, and examples.
     *   `ex/`: Directory with example formulas (`ex.cnf`, `exmus.cnf`, `exmcs.cnf`).
     *   `requirements.txt`: Python dependencies list.
-    *   `attribution.py`: Shapley-Shubik attribution program (supports SAT-based or interval-based approaches).
+    *   `attribution.py`: Shapley-Shubik attribution program (supports SAT-based and interval-based approaches).
     *   `coverage.py`: Script to compute the coverage of MUSes and MCSes formulas.
     *   `enumeration.py`: Tool to enumerate MUSes and MCSes from an unsatisfiable formula.
     *   `sh_common.py`: Shared core classes used by the other scripts.
