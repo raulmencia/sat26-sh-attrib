@@ -43,19 +43,28 @@ The project is organized into three main directories:
     *   `sat_based/`: Results from executing the SAT-based approach. Provides details on completed iterations, execution runtime, and the computed Shapley-Shubik values.
     *   `interval_based/`: Results from executing the interval-based approach. Provides details on completed iterations, execution runtime, and the values obtained for each metric (conservative, uniform, exponential, low, and up).
 
+### Experimental Setup
+All experiments stored in the `interval_based/` and `sat_based/` directories were executed using the following parameters:
+*   **Seed:** `1`
+*   **Iteration Limit:** `960365` (corresponding to $\alpha = 0.05$ and $\epsilon = 0.001$)
+*   **Timeout:** 2 hours (`7200` seconds)
+
 ---
 
 ## Setup and Installation
 
-Follow these steps to configure a local Python virtual environment using your web-downloaded repository files.
+The tool requires **`python-sat`** and **`pyapproxmc`** libraries. You can install them globally or within a virtual environment.
 
-### 1. Create a Virtual Environment
+### Option A: Using a Virtual Environment (Recommended)
+Follow these steps to configure a local Python virtual environment:
+
+#### 1. Create a Virtual Environment
 Navigate to your project directory via terminal and run:
 ```bash
 python -m venv venv
 ```
 
-### 2. Activate the Environment
+#### 2. Activate the Environment
 *   **Linux/macOS:**
     ```bash
     source venv/bin/activate
@@ -65,10 +74,16 @@ python -m venv venv
     venv\Scripts\activate
     ```
 
-### 3. Install Dependencies
+#### 3. Install Dependencies
 Install the required packages listed in `requirements.txt`:
 ```bash
 pip install -r source/requirements.txt
+```
+
+### Option B: Global Installation
+If you prefer not to use a virtual environment, install the required packages directly via terminal:
+```bash
+pip install python-sat pyapproxmc
 ```
 
 ---
